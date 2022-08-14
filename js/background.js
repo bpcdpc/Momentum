@@ -37,5 +37,10 @@ bgImage.style.backgroundImage = `url(${IMAGE_PATH}${chosenImage.src})`;
 bgTitle.innerText = chosenImage.title;
 bgAuthor.innerText = chosenImage.author;
 
-background.classList.remove(HIDDEN_CLASSNAME);
-setTimeout(function(){background.classList.add(ACTIVE_CLASSNAME);}, 501);
+document.addEventListener("DOMContentLoaded", handleLoaded);
+
+function handleLoaded() {
+    background.classList.remove(HIDDEN_CLASSNAME);
+    setTimeout(function(){background.classList.add(ACTIVE_CLASSNAME);}, 501);
+}
+
