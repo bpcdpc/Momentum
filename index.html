@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum App</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div id="login" class="login hidden">
+        <form id="login-form">
+            <label>
+                <span>What's your name?</span>
+                <input required maxlength="15" type="text" />
+            </label>
+        </form>
+    </div><!-- .login -->
+
+    <div id="logged-in" class="logged-in hidden">
+        <div id="link" class="link panel-container">
+            <div id="link-panel" class="panel pivot-top-left hidden">
+                <ul id="link-list"></ul>
+                <form id="link-form">
+                    <input required autocomplete="off" id="link-url" type="url" placeholder="New Link" />
+                    <input required autocomplete="off" id="link-name" type="text" placeholder="Name" />
+                    <input type="submit" />
+                </form>
+            </div>
+            <button>Links</button>
+        </div>
+
+        <form id="search-form" class="search">
+            <input type="text" placeholder="search on google" />
+            <button type="submit"><span class="material-symbols-outlined">search</span></button>
+        </form>
+
+        <div id="weather" class="weather">
+            <span id="weather-icon" class="material-symbols-outlined"></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="clock" class="clock"></div>
+        
+        <h1 id="greeting" class="greeting"></h1>
+
+        <div id="background-info" class="background-info">
+            <span></span>
+            <span></span>
+        </div>
+        
+        <div id="quote" class="quote">
+            <span></span>
+            <span></span>
+        </div>
+ 
+        <div id="todo" class="todo panel-container">
+            <div id="todo-panel" class="panel pivot-bottom-right hidden">
+                <ul id="todo-list"></ul>
+                <form id="todo-form">
+                    <input type="text" placeholder="New To Do" />
+                </form>
+            </div>
+            <button>ToDo</button>
+        </div>
+    </div><!-- .logged-in -->
+
+    <div id="background" class="background hidden">
+        <div></div>
+        <div></div>
+    </div><!-- .backgriund -->
+
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quote.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/link.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
