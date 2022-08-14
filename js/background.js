@@ -6,22 +6,22 @@ const images = [
         author: "Unknown author"
     },
     {
-        src: "03.jpeg",
+        src: "02.jpeg",
         title: "Altai Mountains",
         author: "photoprime"
     },
     {
-        src: "04.jpeg",
+        src: "03.jpeg",
         title: "Nusa Penida island, Indonesia",
         author: "Biletskiy Evgeniy"
     },
     {
-        src: "05.jpeg",
+        src: "04.jpeg",
         title: "Green valley",
         author: "Unknown author"
     },
     {
-        src: "08.jpeg",
+        src: "05.jpeg",
         title: "Autumn in the forest",
         author: "Valiphotos"
     }
